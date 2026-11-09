@@ -1,0 +1,10 @@
+{
+ "rpc": "https://ethereum-rpc.publicnode.com",
+ "from_block": 22431084,
+ "to_block": 26377607,
+ "samples": 3000,
+ "seed": 7702,
+ "failed_blocks": [],
+ "authorizations": 23434,
+ "code_fetched_at_block": 26377749
+}

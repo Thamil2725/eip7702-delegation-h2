@@ -1,0 +1,1513 @@
+[
+ {
+  "delegate": "0xe6b97aa1490c93c28a14d86c13c9dc9c950643ed",
+  "verdict": "UNSAFE",
+  "size": 772,
+  "selectors": 1,
+  "hardcoded": [
+   "0x59aab1bd0d26290274398c07b55955c15425e16b"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x59aab1bd0d26290274398c07b55955c15425e16b calling 0x34fcd5be with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x59aab1bd0d26290274398c07b55955c15425e16b calling 0x34fcd5be with (Call[]):token: MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 1,
+  "authorizations": 4657,
+  "seconds": 0.5
+ },
+ {
+  "delegate": "0x27dbd0e71b85700e29994d6d3a51f2e32442aa61",
+  "verdict": "NO_FINDING",
+  "size": 789,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 2,
+  "authorizations": 2671,
+  "seconds": 1.52
+ },
+ {
+  "delegate": "0x0727ca41efc85f75cef26ee48f825893b4836786",
+  "verdict": "UNSAFE",
+  "size": 1254,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 3,
+  "authorizations": 1320,
+  "seconds": 3.24
+ },
+ {
+  "delegate": "0x84d05511614272694d3a9cebe896514dbde51f40",
+  "verdict": "UNSAFE",
+  "size": 1042,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 4,
+  "authorizations": 1235,
+  "seconds": 3.68
+ },
+ {
+  "delegate": "0x8eac07ec5c61138c5472616e39ccb176ca068c25",
+  "verdict": "UNSAFE",
+  "size": 1045,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 5,
+  "authorizations": 1001,
+  "seconds": 3.69
+ },
+ {
+  "delegate": "0xc43b6c6a43e5760a756a67756b2155c7fa735310",
+  "verdict": "NO_FINDING",
+  "size": 789,
+  "selectors": 2,
+  "hardcoded": [
+   "0xa47ddac15cc788a240e6c08a2e3e8e34d4f74ce1"
+  ],
+  "findings": [
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 6,
+  "authorizations": 954,
+  "seconds": 2.34
+ },
+ {
+  "delegate": "0x66e9d4bc80c1d04d045573c2f4631342fe6fc87d",
+  "verdict": "UNSAFE",
+  "size": 3554,
+  "selectors": 17,
+  "hardcoded": [
+   "0xa3a041f3997b1f9206406242e91f435b48ad0bc2"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):token: MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 7,
+  "authorizations": 791,
+  "seconds": 12.97
+ },
+ {
+  "delegate": "0x1e68c71fa1b7c3efd4a576b5551d2e8004f96ea7",
+  "verdict": "UNSAFE",
+  "size": 3554,
+  "selectors": 17,
+  "hardcoded": [
+   "0xa3a041f3997b1f9206406242e91f435b48ad0bc2"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):token: MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 8,
+  "authorizations": 737,
+  "seconds": 12.93
+ },
+ {
+  "delegate": "0xd2e28229f6f2c235e57de2ebc727025a1d0530fb",
+  "verdict": "NO_FINDING",
+  "size": 6905,
+  "selectors": 16,
+  "hardcoded": [
+   "0xd2e28229f6f2c235e57de2ebc727025a1d0530fb",
+   "0x6067203e59e681396335940c4f2caf6b002815bc"
+  ],
+  "findings": [],
+  "rank": 9,
+  "authorizations": 672,
+  "seconds": 12.06
+ },
+ {
+  "delegate": "0x3fc8c2b6e4ea901721aef251c67bc7c2591a1e1f",
+  "verdict": "UNSAFE",
+  "size": 913,
+  "selectors": 1,
+  "hardcoded": [
+   "0x20e4b64ba91f74d5a361c21869f52f5e63f91426"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x20e4b64ba91f74d5a361c21869f52f5e63f91426 calling 0xa9059cbb with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x20e4b64ba91f74d5a361c21869f52f5e63f91426 calling 0xa9059cbb with (Call[]):token: MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 10,
+  "authorizations": 519,
+  "seconds": 0.44
+ },
+ {
+  "delegate": "0x072c2673ade3632594337a98a473d32a17505fdb",
+  "verdict": "UNSAFE",
+  "size": 2193,
+  "selectors": 7,
+  "hardcoded": [
+   "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with ()"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (recipient)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (token)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (recipient,amount)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (token,recipient)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (recipient,token)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (token,recipient,amount)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (target,value,bytes):eth"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (target,value,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (target,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (address[])"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (Call[]):eth"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with (Call[]):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0xdeadbeef with erc7821"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (recipient): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (recipient,token): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (target,value,bytes):eth: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x35447e72 with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x0921e7ef with (token,recipient): MOVES_ERC20"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x0921e7ef with (token,recipient,amount): MOVES_ERC20"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x0921e7ef with (target,value,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0x0921e7ef with (target,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (recipient): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (token): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (token,recipient): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (recipient,token): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (token,recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (target,value,bytes):eth: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (target,value,bytes):token: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (target,bytes):token: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xc53574ad8706718a87e7f3ad5c57d3ceb75013c7 calling 0xdeadbeef with erc7821: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "FORWARDS_INBOUND_ETH",
+    "detail": "ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 11,
+  "authorizations": 500,
+  "seconds": 9.84
+ },
+ {
+  "delegate": "0xb59f313dcf8c8107adffeabd0c041c896c64dfca",
+  "verdict": "UNSAFE",
+  "size": 1042,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 12,
+  "authorizations": 469,
+  "seconds": 3.69
+ },
+ {
+  "delegate": "0x89383882fc2d0cd4d7952a3267a3b6dae967e704",
+  "verdict": "UNSAFE",
+  "size": 1042,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 13,
+  "authorizations": 442,
+  "seconds": 3.74
+ },
+ {
+  "delegate": "0x0e04736a85433445ef602d07946671685ec94647",
+  "verdict": "UNSAFE",
+  "size": 717,
+  "selectors": 0,
+  "hardcoded": [
+   "0xdac17f958d2ee523a2206206994597c13d831ec7"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "FORWARDS_INBOUND_ETH",
+    "detail": "ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 14,
+  "authorizations": 345,
+  "seconds": 1.98
+ },
+ {
+  "delegate": "0x3c3d718877a7d95857e1ae74b3963bddefb81931",
+  "verdict": "UNSAFE",
+  "size": 1045,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 15,
+  "authorizations": 339,
+  "seconds": 3.73
+ },
+ {
+  "delegate": "0x88cf071b4bf5facab6712070a671f71282188d46",
+  "verdict": "UNSAFE",
+  "size": 1524,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0x169f67ed, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 16,
+  "authorizations": 330,
+  "seconds": 3.31
+ },
+ {
+  "delegate": "0x758aa86b0cf3db98105dec5522a799ad4d800942",
+  "verdict": "CAUTION",
+  "size": 2556,
+  "selectors": 2,
+  "hardcoded": [
+   "0x77b85afbcd336993ac1c65057531c5a5b33b76b8"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x77b85afbcd336993ac1c65057531c5a5b33b76b8 calling 0xa9059cbb with (address[]): MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 17,
+  "authorizations": 307,
+  "seconds": 4.34
+ },
+ {
+  "delegate": "0x63c0c19a282a1b52b07dd5a65b58948a07dae32b",
+  "verdict": "CAUTION",
+  "size": 11185,
+  "selectors": 29,
+  "hardcoded": [
+   "0xdb9b1e94b5b69df7e401ddbede43491141047db3",
+   "0x63c0c19a282a1b52b07dd5a65b58948a07dae32b"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xdb9b1e94b5b69df7e401ddbede43491141047db3 calling 0xd691c964 with erc7821: MOVES_ERC20"
+   }
+  ],
+  "rank": 18,
+  "authorizations": 290,
+  "seconds": 20.74
+ },
+ {
+  "delegate": "0xe6cae83bde06e4c305530e199d7217f42808555b",
+  "verdict": "NO_FINDING",
+  "size": 3639,
+  "selectors": 10,
+  "hardcoded": [],
+  "findings": [],
+  "rank": 19,
+  "authorizations": 279,
+  "seconds": 3.88
+ },
+ {
+  "delegate": "0x18ec006842f647b40a81353b3497d5f589e416ea",
+  "verdict": "CAUTION",
+  "size": 2556,
+  "selectors": 2,
+  "hardcoded": [
+   "0x41cc011e768b2859f2aba42551762a2a17b26fed"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x41cc011e768b2859f2aba42551762a2a17b26fed calling 0xa9059cbb with (address[]): MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 20,
+  "authorizations": 243,
+  "seconds": 4.36
+ },
+ {
+  "delegate": "0x6d362d2f7f7e8ed494b0eeeb473abb3728d12c17",
+  "verdict": "CAUTION",
+  "size": 2662,
+  "selectors": 2,
+  "hardcoded": [
+   "0x0ca8e8d976df3321f6ff0a8cca96536a51565c81"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x0ca8e8d976df3321f6ff0a8cca96536a51565c81 calling 0xa9059cbb with (address[]): MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 21,
+  "authorizations": 212,
+  "seconds": 4.37
+ },
+ {
+  "delegate": "0x0000fb7702036ff9f76044a501ac1aa74cbab16b",
+  "verdict": "NO_FINDING",
+  "size": 7314,
+  "selectors": 12,
+  "hardcoded": [
+   "0x00000000fb2736c301e53904409f03de06c8467a",
+   "0x0000fb7702036ff9f76044a501ac1aa74cbab16b"
+  ],
+  "findings": [],
+  "rank": 22,
+  "authorizations": 192,
+  "seconds": 10.87
+ },
+ {
+  "delegate": "0x9809dd13e6b6c25146ab9e1c7562e9efe19bc1a1",
+  "verdict": "UNSAFE",
+  "size": 892,
+  "selectors": 1,
+  "hardcoded": [
+   "0xa3a041f3997b1f9206406242e91f435b48ad0bc2"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):token: MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 23,
+  "authorizations": 179,
+  "seconds": 0.45
+ },
+ {
+  "delegate": "0x8a67b5020ee254ef48e3b6a04927f39baf7e408a",
+  "verdict": "UNSAFE",
+  "size": 717,
+  "selectors": 0,
+  "hardcoded": [
+   "0xdac17f958d2ee523a2206206994597c13d831ec7"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "FORWARDS_INBOUND_ETH",
+    "detail": "ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 24,
+  "authorizations": 119,
+  "seconds": 1.85
+ },
+ {
+  "delegate": "0x000000009b1d0af20d8c6d0a44e162d11f9b8f00",
+  "verdict": "CAUTION",
+  "size": 24504,
+  "selectors": 36,
+  "hardcoded": [
+   "0x000000009b1d0af20d8c6d0a44e162d11f9b8f00"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "HAS_DELEGATECALL",
+    "detail": "DELEGATECALL appears in the bytecode"
+   }
+  ],
+  "rank": 25,
+  "authorizations": 117,
+  "seconds": 23.94
+ },
+ {
+  "delegate": "0x490aac77c960b0569c8e446ac7e12490bd44ca1d",
+  "verdict": "NO_FINDING",
+  "size": 2725,
+  "selectors": 10,
+  "hardcoded": [
+   "0x696ada227454bd0bf38e8605ab7bacc02a293605"
+  ],
+  "findings": [],
+  "rank": 26,
+  "authorizations": 106,
+  "seconds": 7.01
+ },
+ {
+  "delegate": "0xa12248e95ffe855633be780081f73b1ebe17741e",
+  "verdict": "UNSAFE",
+  "size": 2067,
+  "selectors": 3,
+  "hardcoded": [
+   "0xa122014ff7d36066a9b67598e38d78fb054db41d"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa122014ff7d36066a9b67598e38d78fb054db41d calling 0x09921939 with (address[]): MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa122014ff7d36066a9b67598e38d78fb054db41d calling 0xa9059cbb with (address[]): MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 27,
+  "authorizations": 105,
+  "seconds": 3.64
+ },
+ {
+  "delegate": "0x34fff33dc9c0ead473a1878923b3858d8ed04dfb",
+  "verdict": "CAUTION",
+  "size": 3266,
+  "selectors": 3,
+  "hardcoded": [
+   "0x34fff33dc9c0ead473a1878923b3858d8ed04dfb"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 28,
+  "authorizations": 105,
+  "seconds": 2.96
+ },
+ {
+  "delegate": "0x0399dfc6a2843b244adf618dd4ba33b9e942c546",
+  "verdict": "UNSAFE",
+  "size": 892,
+  "selectors": 1,
+  "hardcoded": [
+   "0xa3a041f3997b1f9206406242e91f435b48ad0bc2"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0xa3a041f3997b1f9206406242e91f435b48ad0bc2 calling 0xcf51607d with (Call[]):token: MOVES_ERC20"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 29,
+  "authorizations": 103,
+  "seconds": 0.47
+ },
+ {
+  "delegate": "0xcda3577ca7ef65f6b7201e9bd80375f5628d15f7",
+  "verdict": "CAUTION",
+  "size": 1707,
+  "selectors": 3,
+  "hardcoded": [
+   "0x21bc354b5a5502df3097e8838eaab5eb0b06aac9",
+   "0x39f6a6c85d39d5abad8a398310c52e7c374f2ba3"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x21bc354b5a5502df3097e8838eaab5eb0b06aac9 calling 0x03c1d1df with (target,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x21bc354b5a5502df3097e8838eaab5eb0b06aac9 calling 0xa3d409fe with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x21bc354b5a5502df3097e8838eaab5eb0b06aac9 calling 0xa3d409fe with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0x21bc354b5a5502df3097e8838eaab5eb0b06aac9 calling 0xa3d409fe with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 30,
+  "authorizations": 95,
+  "seconds": 3.85
+ },
+ {
+  "delegate": "0x69007702764179f14f51cdce752f4f775d74e139",
+  "verdict": "CAUTION",
+  "size": 23741,
+  "selectors": 23,
+  "hardcoded": [
+   "0x69007702764179f14f51cdce752f4f775d74e139"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "HAS_DELEGATECALL",
+    "detail": "DELEGATECALL appears in the bytecode"
+   }
+  ],
+  "rank": 31,
+  "authorizations": 92,
+  "seconds": 6.47
+ },
+ {
+  "delegate": "0x17cb2452565c192706f93203a6326f35b8e0d899",
+  "verdict": "UNSAFE",
+  "size": 1045,
+  "selectors": 2,
+  "hardcoded": [],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "TAKEOVER_SEQUENCE",
+    "detail": "stranger calls 0xc4d66de8, then: ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "LOW_SLOT_WRITES",
+    "detail": "writes low slots [0], which collide with other delegates"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ETH",
+    "detail": "a plain ETH transfer to the account reverts"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 32,
+  "authorizations": 83,
+  "seconds": 3.68
+ },
+ {
+  "delegate": "0xecad547e905892ff19d162ca57b91f0fecf78469",
+  "verdict": "CAUTION",
+  "size": 1035,
+  "selectors": 5,
+  "hardcoded": [
+   "0xedda4e01669d30faa04a9cb75488abc366ee4143",
+   "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+  ],
+  "findings": [
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xedda4e01669d30faa04a9cb75488abc366ee4143 calling 0x49f9c38d with (target,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xedda4e01669d30faa04a9cb75488abc366ee4143 calling 0xa9059cbb with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xedda4e01669d30faa04a9cb75488abc366ee4143 calling 0xa9059cbb with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "TRUSTED_CONTRACT_MOVES_ASSETS",
+    "detail": "0xedda4e01669d30faa04a9cb75488abc366ee4143 calling 0xa9059cbb with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 33,
+  "authorizations": 83,
+  "seconds": 4.14
+ },
+ {
+  "delegate": "0x2e086ac01cb8e6538d393944f02be58d52439ae8",
+  "verdict": "UNSAFE",
+  "size": 847,
+  "selectors": 1,
+  "hardcoded": [
+   "0x5791079cacb90f36dc45a8a8bc8affb60e579600"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "FORWARDS_INBOUND_ETH",
+    "detail": "ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 34,
+  "authorizations": 80,
+  "seconds": 3.7
+ },
+ {
+  "delegate": "0x69e6bd1c4082403fc7917a61f6216552fc1a541d",
+  "verdict": "NO_FINDING",
+  "size": 9768,
+  "selectors": 17,
+  "hardcoded": [
+   "0x31a7a07d27a8faf008b53034529fa5523273a9ec",
+   "0x69e6bd1c4082403fc7917a61f6216552fc1a541d"
+  ],
+  "findings": [],
+  "rank": 35,
+  "authorizations": 77,
+  "seconds": 14.87
+ },
+ {
+  "delegate": "0x2e623468c560072e91d7a94a1dcb2eefbdbe69cb",
+  "verdict": "UNSAFE",
+  "size": 1331,
+  "selectors": 3,
+  "hardcoded": [
+   "0x8cd8005bf70f09153b50198d4d3546f8b451bd18"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x3cf3a025 with (address[])"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x3cf3a025 with (Call[]):eth"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x3cf3a025 with (Call[]):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0xe90a182f with (target,value,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0xe90a182f with (target,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x8cd8005bf70f09153b50198d4d3546f8b451bd18 calling 0x3cf3a025 with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x8cd8005bf70f09153b50198d4d3546f8b451bd18 calling 0x3cf3a025 with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x8cd8005bf70f09153b50198d4d3546f8b451bd18 calling 0x3cf3a025 with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x8cd8005bf70f09153b50198d4d3546f8b451bd18 calling 0xe90a182f with (target,value,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x8cd8005bf70f09153b50198d4d3546f8b451bd18 calling 0xe90a182f with (target,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "FORWARDS_INBOUND_ETH",
+    "detail": "ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   }
+  ],
+  "rank": 36,
+  "authorizations": 75,
+  "seconds": 3.68
+ },
+ {
+  "delegate": "0xcc0c946eecf01a4bc76bc333ea74ceb04756f17b",
+  "verdict": "NO_FINDING",
+  "size": 3834,
+  "selectors": 11,
+  "hardcoded": [],
+  "findings": [],
+  "rank": 37,
+  "authorizations": 70,
+  "seconds": 3.83
+ },
+ {
+  "delegate": "0x89046d34e70a65acab2152c26a0c8e493b5ba629",
+  "verdict": "UNSAFE",
+  "size": 3933,
+  "selectors": 6,
+  "hardcoded": [
+   "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2"
+  ],
+  "findings": [
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0x0c89a0df with (token)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0x0c89a0df with (token,recipient)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0x0c89a0df with (token,recipient,amount)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0x0c89a0df with (target,value,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0x0c89a0df with (target,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with ()"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (recipient)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (token)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (recipient,amount)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (token,recipient)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (recipient,token)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (token,recipient,amount)"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (target,value,bytes):eth"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (target,value,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (target,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (address[])"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (Call[]):eth"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with (Call[]):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ETH",
+    "detail": "stranger calling 0x2c7bddf4 with erc7821"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "MOVES_ERC20",
+    "detail": "stranger calling 0xbca8c7b5 with (target,bytes):token"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (recipient): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (token): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (token,recipient): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (recipient,token): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (token,recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (target,value,bytes):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (target,value,bytes):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (target,bytes):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x092a5cce with erc7821: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x0c89a0df with (token): MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x0c89a0df with (token,recipient): MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x0c89a0df with (token,recipient,amount): MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x0c89a0df with (target,value,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x0c89a0df with (target,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (recipient): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (token): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (token,recipient): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (recipient,token): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (token,recipient,amount): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (target,value,bytes):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (target,value,bytes):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (target,bytes):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (address[]): MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (Call[]):eth: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with (Call[]):token: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0x2c7bddf4 with erc7821: MOVES_ETH"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "OPERATOR_KEY_MOVES_ASSETS",
+    "detail": "0x86d9ad92fc3f69cc9c1a83aff7834fea27f1fff2 calling 0xbca8c7b5 with (target,bytes):token: MOVES_ERC20"
+   },
+   {
+    "severity": "CRITICAL",
+    "finding": "FORWARDS_INBOUND_ETH",
+    "detail": "ETH sent to the account does not stay in it"
+   },
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "HAS_SELFDESTRUCT",
+    "detail": "SELFDESTRUCT appears in the bytecode"
+   }
+  ],
+  "rank": 38,
+  "authorizations": 67,
+  "seconds": 6.23
+ },
+ {
+  "delegate": "0x7702cb554e6bfb442cb743a7df23154544a7176c",
+  "verdict": "CAUTION",
+  "size": 3318,
+  "selectors": 3,
+  "hardcoded": [
+   "0xd0ff13c28679fdd75bc09c0a430a0089bf8b95a8",
+   "0x7702cb554e6bfb442cb743a7df23154544a7176c",
+   "0x2a8010a9d71d2a5aea19d040f8b4797789a194a9"
+  ],
+  "findings": [
+   {
+    "severity": "LOW",
+    "finding": "REJECTS_ERC721",
+    "detail": "a safe ERC-721 transfer to the account reverts"
+   },
+   {
+    "severity": "MEDIUM",
+    "finding": "HAS_DELEGATECALL",
+    "detail": "DELEGATECALL appears in the bytecode"
+   }
+  ],
+  "rank": 39,
+  "authorizations": 66,
+  "seconds": 5.61
+ },
+ {
+  "delegate": "0xe3014e9ab2739adef234b3829c79128746160178",
+  "verdict": "NO_FINDING",
+  "size": 7292,
+  "selectors": 7,
+  "hardcoded": [
+   "0xe3014e9ab2739adef234b3829c79128746160178"
+  ],
+  "findings": [],
+  "rank": 40,
+  "authorizations": 64,
+  "seconds": 4.84
+ }
+]

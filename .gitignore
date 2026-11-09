@@ -1,0 +1,9 @@
+.venv/
+.tools/
+out/
+cache/
+broadcast/
+__pycache__/
+*.pyc
+.env
+foundry_v*.zip
